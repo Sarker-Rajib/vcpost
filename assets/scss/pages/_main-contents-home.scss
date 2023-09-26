@@ -1,0 +1,43 @@
+.pagin-wrapper {
+    padding: 20px 0;
+    margin: auto;
+
+    @media (min-width:1200px) {
+        max-width: 80%;
+    }
+
+    .nav-btn {
+        border: none;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #333333;
+    }
+
+    .page-nums {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+
+        @media (min-width:1200px) {
+            padding: 0 50px;
+        }
+
+        .page-num {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: #333333;
+
+            &.active {
+                color: #099939;
+            }
+
+            &:hover {
+                color: #099939;
+            }
+        }
+    }
+}

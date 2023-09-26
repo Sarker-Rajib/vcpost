@@ -1,0 +1,98 @@
+.top-navigation {
+    background: url(../images/h-bg.png) no-repeat center center/cover;
+    padding: 10px 0 20px;
+
+    .date-link {
+        a {
+            color: #8ea8c0;
+            font-size: 12px;
+            margin: 0 10px;
+            transition: all 0.2s;
+
+            @media (max-width:767px) {
+                margin: 0 5px;
+            }
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .navbar-brand {
+        max-width: 340px;
+
+        @media (max-width:767px) {
+            max-width: 200px;
+        }
+    }
+
+    button {
+        font-size: 12px;
+        color: #ffffff;
+        background: none;
+        text-align: center;
+        border: none;
+        text-transform: uppercase;
+        margin: 0 10px;
+
+        @media(max-width:767px) {
+            font-size: 10px;
+            margin: 0 5px;
+        }
+
+        &:hover {
+            color: #8ea8c0;
+        }
+    }
+}
+
+.bottom-navigation {
+    padding-top: 10px;
+
+    @media(max-width:991px) {
+        overflow-x: scroll;
+
+        // scroll bar design
+        /* width */
+        &::-webkit-scrollbar {
+            height: 0px;
+            width: 10px;
+        }
+    }
+
+    .link-wrapper {
+        @media(max-width:991px) {
+            width: 800px;
+        }
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        color: #010133;
+        margin: 0 30px;
+        font-family: "helvetica-bold";
+        padding-bottom: 5px;
+        padding-inline: 15px;
+        border-bottom: 2px solid #00000000;
+
+
+        &.active {
+            color: #082585;
+            border-bottom: 2px solid #54575498;
+        }
+
+        &:hover {
+            color: #274299;
+        }
+
+        @media(min-width:1200px) {
+            display: inline-block;
+
+        }
+
+        @media(max-width:1199px) {
+            margin: 0 20px;
+        }
+    }
+}
