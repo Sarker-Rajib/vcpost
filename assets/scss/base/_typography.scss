@@ -1,139 +1,18 @@
-@use '../abstracts/variables';
-@use '../abstracts/fonts';
-
-body {
-  font-family: "helvetica-regular";
-}
-
 .section-title {
-  font-family: 'PT Serif', serif;
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 18px;
+  font-family: "helvetica-bold";
+  font-size: 20px;
+  padding: 15px 0;
 }
 
-.category-title {
-  font-family: "helvetica-regular";
-  color: variables.$color-sky;
-  font-size: 12px;
-}
-
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-
-  @media(min-width: 1200px) {
-    -webkit-line-clamp: 3;
-  }
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 3;
-}
-
-.line-clamp-4 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 4;
-}
-
-// all heading
 .heading-small {
-  font-family: 'PT Serif', serif;
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
+  font-family: "helvetica-bold";
+  color: #000000;
 }
 
 .heading-medium {
-  font-family: "helvetica-regular";
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 17px;
-}
-
-.heading-medium-v2 {
-  font-family: 'PT Serif', serif;
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 17px;
-}
-
-.heading-semibig {
-  font-family: 'PT Serif', serif;
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.heading-big {
-  font-family: 'PT Serif', serif;
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 28px;
-}
-
-.heading-xl {
-  font-family: 'PT Serif', serif;
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 32px;
-}
-
-.heading-xxl {
-  font-family: 'PT Serif', serif;
-  color: variables.$color-blue;
-  font-weight: 700;
-  font-size: 35px;
-}
-
-
-// all paragraph text
-.text-small-ash {
-  font-size: 13px;
-  color: variables.$color-ash;
-}
-
-.text-medium-ash {
-  font-size: 18px;
-  color: variables.$color-ash;
-}
-
-.text-big {
-  font-family: "georgia-regular";
-  font-size: 20px;
-  color: #333333;
-}
-
-.publish-time {
-  font-family: "helvetica-regular";
-  color: variables.$color-ash;
-  font-size: 12px;
-  margin-left: 5px;
-}
-
-.absolute-number {
-  background: variables.$color-blue;
-  display: inline-block;
-  position: absolute;
-  color: #ffffff;
-  padding: 0px 5px;
-  bottom: -5px;
-  left: 15px;
-}
-
-.chr {
-  background: variables.$color-blue;
-  height: 3px;
-}
-
-hr {
-  color: #646464;
-  margin: 10px 0;
+  font-size: 26px;
+  line-height: 28px;
+  font-family: "helvetica-bold";
+  color: #000000;
 }

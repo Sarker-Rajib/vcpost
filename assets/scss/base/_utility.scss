@@ -1,5 +1,27 @@
 .bor-right {
     @media (min-width:1200px) {
-        border-right: 2px solid #eee;
+        border-right: 2px solid #ebebeb;
     }
+}
+
+.custom-gutter {
+    --bs-gutter-x: 32px;
+}
+
+
+@media(min-width:768px) {
+
+    .col-md-55 {
+        flex: 0 0 auto;
+        width: 55%
+    }
+
+    .col-md-45 {
+        flex: 0 0 auto;
+        width: 45%
+    }
+}
+
+.my-25 {
+    margin: 12px 0;
 }
