@@ -18,45 +18,98 @@
     <div class="top-navigation pt-2">
       <div class="container">
         <div class="date-link d-flex align-items-center justify-content-between">
-          <p style="color: #8ea8c0; font-size: 12px;" class="text-uppercase">Sep 19, 2023 <span
-              class="d-none d-md-inline-block">Last Updated
-              11:56 AM EDT</span>
+          <p>Sep 20, 2023 <span class="d-none d-md-inline-block">Last Updated
+              16:06 PM EDT</span>
           </p>
 
-          <ul class="ps-0 d-flex text-uppercase">
-            <li><a href="#">Slideshows</a></li>
-            <li><a href="#">Archives</a></li>
-            <li><a href="#">Videos</a></li>
+          <ul class="p-0 d-flex">
+            <li><a href="#">CONTRIBUTOR</a></li>
+            <li><a href="#"><i class="fab icon-s fa-twitter"></i></a></li>
+            <li class="mx-2"><a href="#"><i class="fab icon-s fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab icon-s fa-facebook-f"></i></a></li>
           </ul>
         </div>
       </div>
-      <hr class="mt-2 mb-3">
+    </div>
+    <div class="bottom-navigation">
       <div class="container">
-        <div class="date-link d-flex align-items-center justify-content-between">
-          <a class="navbar-brand m-0" href="index.html">
-            <img src="assets/images/logo.svg" alt="logo" class="img-fluid" />
+        <div class="text-center logo-wrap">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/b-logo.svg" alt="logo" class="img-fluid" />
           </a>
-
-          <div>
-            <button>Subscribe Now</button>
-            <button data-bs-toggle="modal" data-bs-target="#searchModel"><i class="fas fa-search"></i></button>
-          </div>
         </div>
       </div>
-    </div>
-    <div class="bottom-navigation shadow-sm">
       <div class="container">
-        <nav class="d-flex link-wrapper align-items-center justify-content-lg-center">
-          <a href="#" class="nav-link ms-0 active">HOME</a>
-          <a href="#" class="nav-link">NEWS</a>
-          <a href="#" class="nav-link">WORLD</a>
-          <a href="#" class="nav-link">MARKETS</a>
-          <a href="#" class="nav-link">TECH</a>
-          <a href="#" class="nav-link">PERSONAL FINANCE</a>
-          <a href="#" class="nav-link">LIFE</a>
-        </nav>
+        <hr>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="pe-2">
+            <a href="#sideNav" class="nav-link m-0 p-0" data-bs-toggle="offcanvas" role="button"><i
+                class="fas fa-bars"></i></a>
+          </div>
+          <div class="bottom-navigation">
+            <nav class="d-flex link-wrapper align-items-center justify-content-lg-center">
+              <a href="#" class="nav-link ps-0 active">Deals</a>
+              <a href="#" class="nav-link">Investors</a>
+              <a href="#" class="nav-link">Funding</a>
+              <a href="#" class="nav-link">Regions</a>
+              <a href="#" class="nav-link">Sectors</a>
+              <a href="#" class="nav-link">People</a>
+              <a href="#" class="nav-link">Regulatory</a>
+              <a href="#" class="nav-link">LIFE</a>
+            </nav>
+          </div>
+          <div class="ps-2">
+            <button data-bs-toggle="modal" data-bs-target="#searchModel" class="nav-link m-0">
+              <i class="far fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <hr>
       </div>
     </div>
+
+    <!-- === sideNav start === -->
+    <div class="offcanvas offcanvas-start side-nav" tabindex="-1" id="sideNav">
+      <div class="offcanvas-header p-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.svg" alt="logo" class="img-fluid" />
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-4 pt-0">
+        <nav class="main-nav">
+          <ul class="ps-0">
+            <li>
+              <a href="#" class="nav-link">Franchise News</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Featured Franchise</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Biz/Tech</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Guide</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Review</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Life</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="offcanvas-footer border-top p-4">
+        <p class="copyright">
+          © 2023 Copyright Venture Capital Post. All Rights reserved.
+        </p>
+      </div>
+    </div>
+    <!-- ===//end of sideNav ===-->
 
     <!-- === searchModel start === -->
     <div class="modal fade search-modal" id="searchModel" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -64,20 +117,17 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header px-4">
-            <h1 class="modal-title section-title" style="color: #316ca6" id="exampleModalLabel">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
               Search Here
             </h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body p-4">
             <form action="#" class="d-flex">
-              <div class="input-group">
-                <input type="text" class="form-control form-control-lg rounded-0"
-                  placeholder="enter your search text" />
-                <button type="submit" class="btn btn-lg blue-btn search-btn w-auto">
-                  Search
-                </button>
-              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="enter your search text" />
+              <button type="submit" class="btn btn-lg btn-dark search-btn ms-2">
+                Search
+              </button>
             </form>
           </div>
         </div>
@@ -102,62 +152,152 @@
 
   <!-- === footer section start === -->
   <footer class="footer">
-    <div class="container">
-      <div class="top">
-        <img src="assets/images/f-logo.svg" alt="img" class="img-fluid">
-        <span style="color: #cbcbcb; font-size: 12px;">© 2023 Money Times. All rights reserved. </span>
-      </div>
-    </div>
-    <hr class="my-3">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 col-xl-2">
+            <h3 class="link-header">Deals</h3>
+            <ul class="p-0">
+              <li><a href="#" class="nav-link-t">Leveraged Buyouts</a></li>
+              <li><a href="#" class="nav-link-t">Venture Capital</a></li>
+              <li><a href="#" class="nav-link-t">Mezzanine Debt</a></li>
+              <li><a href="#" class="nav-link-t">Growth Equity</a></li>
+              <li><a href="#" class="nav-link-t">Dividend Recapitalisation</a></li>
+              <li><a href="#" class="nav-link-t">Secondaries</a></li>
+              <li><a href="#" class="nav-link-t">More</a></li>
+            </ul>
+            <ul class="p-0 d-none">
+              <li><a href="#" class="nav-link-t">Senior Debt</a></li>
+              <li><a href="#" class="nav-link-t">Co-investment</a></li>
+              <li><a href="#" class="nav-link-t">Tertiaries</a></li>
+              <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
+              <li><a href="#" class="nav-link-t">Infrastructure</a></li>
+              <li><a href="#" class="nav-link-t">Exits</a></li>
+              <li><a href="#" class="nav-link-t">IPO</a></li>
+              <li><a href="#" class="nav-link-t">Privatisation</a></li>
+              <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
+              <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
+              <li><a href="#" class="nav-link-t">Equity Financing</a></li>
+            </ul>
+          </div>
 
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-6 col-md-8">
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <ul class="p-0">
-                <li><a href="#">News</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Markets</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Personal Finance</a></li>
-                <li><a href="#">Life</a></li>
-              </ul>
-            </div>
+          <div class="col-6 col-md-4 col-xl-2">
+            <h3 class="link-header">Investors</h3>
+            <ul class="p-0">
+              <li><a href="#" class="nav-link-t">Corporations</a></li>
+              <li><a href="#" class="nav-link-t">Institutional investors</a></li>
+              <li><a href="#" class="nav-link-t">Pension funds</a></li>
+              <li><a href="#" class="nav-link-t">Endowments</a></li>
+              <li><a href="#" class="nav-link-t">Limited Liability Company</a></li>
+              <li><a href="#" class="nav-link-t">Fund of funds</a></li>
+              <li><a href="#" class="nav-link-t">More</a></li>
+            </ul>
+            <ul class="p-0 d-none">
+              <li><a href="#" class="nav-link-t">Foundations</a></li>
+              <li><a href="#" class="nav-link-t">Investment banks</a></li>
+              <li><a href="#" class="nav-link-t">Merchant banks</a></li>
+              <li><a href="#" class="nav-link-t">Commercial banks</a></li>
+              <li><a href="#" class="nav-link-t">High-net worth individuals</a></li>
+              <li><a href="#" class="nav-link-t">Family offices</a></li>
+              <li><a href="#" class="nav-link-t">Sovereign wealth funds</a></li>
+            </ul>
+          </div>
 
-            <div class="col-md-6 col-lg-4">
-              <ul class="p-0">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
+          <div class="col-6 col-md-4 col-xl-2">
+            <h3 class="link-header">Funding</h3>
+            <ul class="p-0">
+              <li><a href="#" class="nav-link-t">Leveraged Buyouts</a></li>
+              <li><a href="#" class="nav-link-t">Venture Capital</a></li>
+              <li><a href="#" class="nav-link-t">Mezzanine Debt</a></li>
+              <li><a href="#" class="nav-link-t">Growth Equity</a></li>
+              <li><a href="#" class="nav-link-t">Dividend Recapitalisation</a></li>
+              <li><a href="#" class="nav-link-t">Secondaries</a></li>
+              <li><a href="#" class="nav-link-t">More</a></li>
+            </ul>
+            <ul class="p-0 d-none">
+              <li><a href="#" class="nav-link-t">Senior Debt</a></li>
+              <li><a href="#" class="nav-link-t">Co-investment</a></li>
+              <li><a href="#" class="nav-link-t">Tertiaries</a></li>
+              <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
+              <li><a href="#" class="nav-link-t">Infrastructure</a></li>
+              <li><a href="#" class="nav-link-t">Exits</a></li>
+              <li><a href="#" class="nav-link-t">IPO</a></li>
+              <li><a href="#" class="nav-link-t">Privatisation</a></li>
+              <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
+              <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
+              <li><a href="#" class="nav-link-t">Equity Financing</a></li>
+            </ul>
+          </div>
 
-            <div class="col-md-6 col-lg-4">
-              <ul class="p-0">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Google+</a></li>
-                <li><a href="#">RSS</a></li>
-              </ul>
-            </div>
+          <div class="col-6 col-md-4 col-xl-2">
+            <h3 class="link-header">Regions</h3>
+            <ul class="p-0">
+              <li><a href="#" class="nav-link-t">Africa</a></li>
+              <li><a href="#" class="nav-link-t">Asia/Pacific</a></li>
+              <li><a href="#" class="nav-link-t">Europe</a></li>
+              <li><a href="#" class="nav-link-t">South/Central America</a></li>
+              <li><a href="#" class="nav-link-t">Middle East</a></li>
+              <li><a href="#" class="nav-link-t">North America</a></li>
+              <li><a href="#" class="nav-link-t">Oceania</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl-2">
+            <h3 class="link-header">Sectors</h3>
+            <ul class="p-0">
+              <li><a href="#" class="nav-link-t">Leveraged Buyouts</a></li>
+              <li><a href="#" class="nav-link-t">Venture Capital</a></li>
+              <li><a href="#" class="nav-link-t">Mezzanine Debt</a></li>
+              <li><a href="#" class="nav-link-t">Growth Equity</a></li>
+              <li><a href="#" class="nav-link-t">Dividend Recapitalisation</a></li>
+              <li><a href="#" class="nav-link-t">Secondaries</a></li>
+              <li><a href="#" class="nav-link-t">More</a></li>
+            </ul>
+            <ul class="p-0 d-none">
+              <li><a href="#" class="nav-link-t">Senior Debt</a></li>
+              <li><a href="#" class="nav-link-t">Co-investment</a></li>
+              <li><a href="#" class="nav-link-t">Tertiaries</a></li>
+              <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
+              <li><a href="#" class="nav-link-t">Infrastructure</a></li>
+              <li><a href="#" class="nav-link-t">Exits</a></li>
+              <li><a href="#" class="nav-link-t">IPO</a></li>
+              <li><a href="#" class="nav-link-t">Privatisation</a></li>
+              <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
+              <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
+              <li><a href="#" class="nav-link-t">Equity Financing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl-2">
+            <h3 class="link-header">People</h3>
+            <h3 class="link-header">Regulatory</h3>
+            <h3 class="link-header">Life</h3>
+
+            <ul class="p-0 d-flex">
+              <li><a href="#"><i class="fab icon-s fa-twitter"></i></a></li>
+              <li class="mx-4"><a href="#"><i class="fab icon-s fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fab icon-s fa-facebook-f"></i></a></li>
+            </ul>
           </div>
         </div>
-        <div class="col-6 col-md-4">
-          <div class="sign-up">
-            <p>Sign up for WEekly Money Times and more</p>
-            <form>
-              <div class="d-flex justify-content-between in-form my-4">
-                <input type="email" class="w-100" placeholder="EMAIL ADDRESS">
-                <input type="submit" value="SIGN UP">
-              </div>
-            </form>
-            <span>By subscribing to this newsletter, you agree to our Terms of Service and Privacy Policy</span>
-          </div>
-        </div>
       </div>
     </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="d-md-flex pb-2">
+          <div>
+            <a href="#" class="bottom-navs ps-0">ARCHIVE</a></li>
+            <a href="#" class="bottom-navs">ABOUT</a></li>
+            <a href="#" class="bottom-navs">CONTACT US</a></li>
+          </div>
+          <div>
+            <a href="#" class="bottom-navs ps-0 ps-md-2">PRIVACY POLICY</a></li>
+            <a href="#" class="bottom-navs border-0">TERMS OF SERVICE</a></li>
+          </div>
+        </div>
+        <p>© 2023 Copyright Venture Capital Post. All Rights reserved.</p>
+      </div>
     </div>
   </footer>
   <!-- ===//end of footer section === -->
