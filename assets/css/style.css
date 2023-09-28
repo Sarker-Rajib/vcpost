@@ -68,6 +68,7 @@ a:hover {
   font-family: "helvetica-bold";
   font-size: 20px;
   padding: 15px 0;
+  color: #000000;
 }
 
 .heading-small {
@@ -228,25 +229,25 @@ a:hover {
   overflow: hidden;
 }
 
-.Regions-card .big-header {
+.regions-card .big-header {
   font-family: "helvetica-bold";
   font-size: 26px;
   line-height: 28.5px;
   color: #000000;
 }
-.Regions-card .mid-header {
+.regions-card .mid-header {
   font-family: "helvetica-bold";
   font-size: 19px;
   line-height: 20.5px;
   color: #000000;
 }
-.Regions-card .small-header {
+.regions-card .small-header {
   font-family: "helvetica-bold";
   font-size: 17px;
   line-height: 18.5px;
   color: #000000;
 }
-.Regions-card .para {
+.regions-card .para {
   font-family: "helvetica-regular";
   font-size: 14px;
   line-height: 15.5px;
@@ -460,6 +461,22 @@ a:hover {
   }
   .main-contents-home .content-wrapper-x .sidebar {
     width: 325px;
+  }
+}
+
+.funding .wrap-c {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 1199px) {
+  .funding .wrap-c {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .funding .wrap-c {
+    grid-template-columns: 1fr;
   }
 }
 
