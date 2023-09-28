@@ -31,33 +31,20 @@
         </div>
       </div>
     </div>
+
     <div class="bottom-navigation">
       <div class="container">
-        <div class="text-center logo-wrap">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/b-logo.svg" alt="logo" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="d-flex horizon-nav justify-content-between align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
           <div class="pe-2">
             <a href="#sideNav" class="nav-link m-0 p-0" data-bs-toggle="offcanvas" role="button"><i
-                class="fas fa-bars"></i></a>
+                class="fas fa-bars"></i>
+            </a>
           </div>
 
-          <div class="bottom-navigation">
-            <nav class="d-flex link-wrapper align-items-center justify-content-lg-center">
-              <a href="#" class="nav-link ps-0 active">Deals</a>
-              <a href="#" class="nav-link">Investors</a>
-              <a href="#" class="nav-link">Funding</a>
-              <a href="#" class="nav-link">Regions</a>
-              <a href="#" class="nav-link">Sectors</a>
-              <a href="#" class="nav-link">People</a>
-              <a href="#" class="nav-link">Regulatory</a>
-              <a href="#" class="nav-link">LIFE</a>
-            </nav>
+          <div class="text-center logo-wrap">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/b-logo.svg" alt="logo" class="img-fluid">
+            </a>
           </div>
 
           <div class="ps-2">
@@ -66,6 +53,7 @@
             </button>
           </div>
         </div>
+        <div class="chr"></div>
       </div>
     </div>
 
@@ -126,8 +114,37 @@
   <!-- ===//end of header section === -->
 
   <!-- === main section start === -->
-  <main class="main-contents-home">
+  <main class="main-contents-home pt-4">
     <div class="container">
+
+      <div class="p-section-header d-flex align-items-end justify-content-between">
+        <h1 class="title">Deals</h1>
+
+        <div class="link-wrap-slider flex-grow-1 pb-1">
+          <div class="content-wrapper-top">
+            <div class="link-scroller">
+              <div class="service-link" id="linkContainer">
+                <ul class="contents ps-3">
+                  <li class="text-center"><a class="text-nowrap" href="#">Leveraged Buyouts</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Venture Capital</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Mezzanine Debt</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Growth Equity</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Dividend Recapitalisation</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Secondaries</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Secondaries 2</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Secondaries 3</a></li>
+                  <li class="text-center"><a class="text-nowrap" href="#">Secondaries 4</a></li>
+                </ul>
+              </div>
+              <button class="arrow prev btn" id="slideBack" type="button"><i class="fas fa-chevron-left"></i></button>
+              <button class="arrow next btn" id="slide" type="button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
       <!-- first one -->
       <div class="content-wrapper">
         <div class="left-content">
@@ -494,22 +511,38 @@
               <li><a href="#" class="nav-link-t">Mezzanine Debt</a></li>
               <li><a href="#" class="nav-link-t">Growth Equity</a></li>
               <li><a href="#" class="nav-link-t">Dividend Recapitalisation</a></li>
-              <li><a href="#" class="nav-link-t">Secondaries</a></li>
-              <li><a href="#" class="nav-link-t">More</a></li>
+              <li><a href="#" class="nav-link-t mb-0">Secondaries</a></li>
             </ul>
-            <ul class="p-0 d-none">
-              <li><a href="#" class="nav-link-t">Senior Debt</a></li>
-              <li><a href="#" class="nav-link-t">Co-investment</a></li>
-              <li><a href="#" class="nav-link-t">Tertiaries</a></li>
-              <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
-              <li><a href="#" class="nav-link-t">Infrastructure</a></li>
-              <li><a href="#" class="nav-link-t">Exits</a></li>
-              <li><a href="#" class="nav-link-t">IPO</a></li>
-              <li><a href="#" class="nav-link-t">Privatisation</a></li>
-              <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
-              <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
-              <li><a href="#" class="nav-link-t">Equity Financing</a></li>
-            </ul>
+
+            <div class="more-link-wrap">
+              <div class="accordion" id="more">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#moreM"
+                      aria-expanded="true" aria-controls="moreM">
+                      More
+                    </button>
+                  </h2>
+                  <div id="moreM" class="accordion-collapse collapse" data-bs-parent="#more">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a href="#" class="nav-link-t">Senior Debt</a></li>
+                        <li><a href="#" class="nav-link-t">Co-investment</a></li>
+                        <li><a href="#" class="nav-link-t">Tertiaries</a></li>
+                        <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
+                        <li><a href="#" class="nav-link-t">Infrastructure</a></li>
+                        <li><a href="#" class="nav-link-t">Exits</a></li>
+                        <li><a href="#" class="nav-link-t">IPO</a></li>
+                        <li><a href="#" class="nav-link-t">Privatisation</a></li>
+                        <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
+                        <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
+                        <li><a href="#" class="nav-link-t">Equity Financing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-6 col-md-4 col-xl-2">
@@ -521,17 +554,32 @@
               <li><a href="#" class="nav-link-t">Endowments</a></li>
               <li><a href="#" class="nav-link-t">Limited Liability Company</a></li>
               <li><a href="#" class="nav-link-t">Fund of funds</a></li>
-              <li><a href="#" class="nav-link-t">More</a></li>
             </ul>
-            <ul class="p-0 d-none">
-              <li><a href="#" class="nav-link-t">Foundations</a></li>
-              <li><a href="#" class="nav-link-t">Investment banks</a></li>
-              <li><a href="#" class="nav-link-t">Merchant banks</a></li>
-              <li><a href="#" class="nav-link-t">Commercial banks</a></li>
-              <li><a href="#" class="nav-link-t">High-net worth individuals</a></li>
-              <li><a href="#" class="nav-link-t">Family offices</a></li>
-              <li><a href="#" class="nav-link-t">Sovereign wealth funds</a></li>
-            </ul>
+            <div class="more-link-wrap">
+              <div class="accordion" id="moretwo">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#morex"
+                      aria-expanded="true" aria-controls="morex">
+                      More
+                    </button>
+                  </h2>
+                  <div id="morex" class="accordion-collapse collapse" data-bs-parent="#moretwo">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a href="#" class="nav-link-t">Foundations</a></li>
+                        <li><a href="#" class="nav-link-t">Investment banks</a></li>
+                        <li><a href="#" class="nav-link-t">Merchant banks</a></li>
+                        <li><a href="#" class="nav-link-t">Commercial banks</a></li>
+                        <li><a href="#" class="nav-link-t">High-net worth individuals</a></li>
+                        <li><a href="#" class="nav-link-t">Family offices</a></li>
+                        <li><a href="#" class="nav-link-t">Sovereign wealth funds</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-6 col-md-4 col-xl-2">
@@ -543,21 +591,36 @@
               <li><a href="#" class="nav-link-t">Growth Equity</a></li>
               <li><a href="#" class="nav-link-t">Dividend Recapitalisation</a></li>
               <li><a href="#" class="nav-link-t">Secondaries</a></li>
-              <li><a href="#" class="nav-link-t">More</a></li>
             </ul>
-            <ul class="p-0 d-none">
-              <li><a href="#" class="nav-link-t">Senior Debt</a></li>
-              <li><a href="#" class="nav-link-t">Co-investment</a></li>
-              <li><a href="#" class="nav-link-t">Tertiaries</a></li>
-              <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
-              <li><a href="#" class="nav-link-t">Infrastructure</a></li>
-              <li><a href="#" class="nav-link-t">Exits</a></li>
-              <li><a href="#" class="nav-link-t">IPO</a></li>
-              <li><a href="#" class="nav-link-t">Privatisation</a></li>
-              <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
-              <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
-              <li><a href="#" class="nav-link-t">Equity Financing</a></li>
-            </ul>
+            <div class="more-link-wrap">
+              <div class="accordion" id="accda">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#moreN"
+                      aria-expanded="true" aria-controls="moreN">
+                      More
+                    </button>
+                  </h2>
+                  <div id="moreN" class="accordion-collapse collapse" data-bs-parent="#accda">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a href="#" class="nav-link-t">Senior Debt</a></li>
+                        <li><a href="#" class="nav-link-t">Co-investment</a></li>
+                        <li><a href="#" class="nav-link-t">Tertiaries</a></li>
+                        <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
+                        <li><a href="#" class="nav-link-t">Infrastructure</a></li>
+                        <li><a href="#" class="nav-link-t">Exits</a></li>
+                        <li><a href="#" class="nav-link-t">IPO</a></li>
+                        <li><a href="#" class="nav-link-t">Privatisation</a></li>
+                        <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
+                        <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
+                        <li><a href="#" class="nav-link-t">Equity Financing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-6 col-md-4 col-xl-2">
@@ -582,21 +645,36 @@
               <li><a href="#" class="nav-link-t">Growth Equity</a></li>
               <li><a href="#" class="nav-link-t">Dividend Recapitalisation</a></li>
               <li><a href="#" class="nav-link-t">Secondaries</a></li>
-              <li><a href="#" class="nav-link-t">More</a></li>
             </ul>
-            <ul class="p-0 d-none">
-              <li><a href="#" class="nav-link-t">Senior Debt</a></li>
-              <li><a href="#" class="nav-link-t">Co-investment</a></li>
-              <li><a href="#" class="nav-link-t">Tertiaries</a></li>
-              <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
-              <li><a href="#" class="nav-link-t">Infrastructure</a></li>
-              <li><a href="#" class="nav-link-t">Exits</a></li>
-              <li><a href="#" class="nav-link-t">IPO</a></li>
-              <li><a href="#" class="nav-link-t">Privatisation</a></li>
-              <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
-              <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
-              <li><a href="#" class="nav-link-t">Equity Financing</a></li>
-            </ul>
+            <div class="more-link-wrap">
+              <div class="accordion" id="vertmore">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#morYm"
+                      aria-expanded="true" aria-controls="morYm">
+                      More
+                    </button>
+                  </h2>
+                  <div id="morYm" class="accordion-collapse collapse" data-bs-parent="#vertmore">
+                    <div class="accordion-body">
+                      <ul class="p-0">
+                        <li><a href="#" class="nav-link-t">Senior Debt</a></li>
+                        <li><a href="#" class="nav-link-t">Co-investment</a></li>
+                        <li><a href="#" class="nav-link-t">Tertiaries</a></li>
+                        <li><a href="#" class="nav-link-t">Turnaround Investing</a></li>
+                        <li><a href="#" class="nav-link-t">Infrastructure</a></li>
+                        <li><a href="#" class="nav-link-t">Exits</a></li>
+                        <li><a href="#" class="nav-link-t">IPO</a></li>
+                        <li><a href="#" class="nav-link-t">Privatisation</a></li>
+                        <li><a href="#" class="nav-link-t">Mergers & Acquisitions</a></li>
+                        <li><a href="#" class="nav-link-t">Bankruptcy</a></li>
+                        <li><a href="#" class="nav-link-t">Equity Financing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="col-6 col-md-4 col-xl-2">

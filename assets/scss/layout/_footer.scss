@@ -15,7 +15,7 @@
             color: #555555;
             font-family: "helvetica-regular";
             display: inline-block;
-            padding-bottom: 10px;
+            margin-bottom: 10px;
             transition: all 0.2;
 
             &:hover {
@@ -59,4 +59,71 @@
             font-family: "helvetica-regular";
         }
     }
+}
+
+.more-link-wrap {
+    background: #fafafa;
+
+    .accordion-item {
+        background: #fafafa;
+        border: none;
+        padding: 0;
+        border-radius: 0;
+
+        .accordion-header {
+            padding: 0 !important;
+            line-height: 25px;
+            background: #fafafa;
+            border-bottom: 1px solid #00000000;
+
+            .accordion-button {
+                font-family: "helvetica-regular";
+                display: inline-block;
+                padding-bottom: 10px;
+                transition: all 0.2;
+                font-size: 13px;
+                color: #555555;
+                text-decoration: underline;
+                background: #fafafa;
+                border: none;
+                padding: 0 0 10px;
+
+                &.collapsed {
+                    padding: 0;
+                    border: none;
+                }
+
+                &:hover {
+                    color: #104e82;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+        }
+
+        .accordion-body {
+            background: #ffffff00;
+            padding: 0;
+
+            .nav-link-t {
+                font-size: 13px;
+                color: #555555;
+                font-family: "helvetica-regular";
+                display: inline-block;
+                transition: all 0.2;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: #104e82;
+                }
+            }
+        }
+    }
+}
+
+.accordion {
+    --bs-accordion-border-color: #00000000;
 }
