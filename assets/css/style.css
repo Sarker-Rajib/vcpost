@@ -90,8 +90,15 @@ a:hover {
   }
 }
 
-.custom-gutter {
-  --bs-gutter-x: 32px;
+@media (min-width: 1200px) {
+  .custom-gutter {
+    --bs-gutter-x: 32px;
+  }
+}
+
+.chr {
+  height: 1px;
+  background: #d9d9d9;
 }
 
 @media (min-width: 768px) {
@@ -195,12 +202,15 @@ a:hover {
   font-size: 14px;
 }
 
+.small-heading-card {
+  border-top: 1px solid #f0f0f0;
+  padding: 15px 5px;
+}
 .small-heading-card .heading {
   font-size: 17px;
   line-height: 18.5px;
   font-family: "helvetica-bold";
   color: #000000;
-  padding: 5px;
 }
 
 .numbered-card {

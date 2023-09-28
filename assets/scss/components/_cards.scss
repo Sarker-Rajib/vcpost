@@ -75,12 +75,14 @@
 }
 
 .small-heading-card {
+    border-top: 1px solid #f0f0f0;
+    padding: 15px 5px;
+
     .heading {
         font-size: 17px;
         line-height: 18.5px;
         font-family: "helvetica-bold";
         color: #000000;
-        padding: 5px;
     }
 }
 
