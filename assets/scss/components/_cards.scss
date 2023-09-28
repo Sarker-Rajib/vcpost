@@ -49,6 +49,22 @@
     }
 }
 
+.news-card-lt {
+    display: grid;
+    padding: 16px 0;
+    border-bottom: 2px solid #f4f4f4;
+
+    @media(min-width: 768px) {
+        gap: 25px;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .header {
+        line-height: 25px;
+        padding: 15px 0 20px;
+    }
+}
+
 .card-medium {
     padding-bottom: 25px;
 

@@ -71,7 +71,7 @@
 }
 
 .pagin-wrapper {
-    padding: 20px 0;
+    padding: 30px 0;
     margin: auto;
 
     @media (min-width:1200px) {
@@ -81,10 +81,10 @@
     .nav-btn {
         border: none;
         background: none;
-        font-family: 'Inter', sans-serif;
+        font-family: "helvetica-regular";
         font-weight: 600;
-        font-size: 16px;
-        color: #333333;
+        font-size: 14px;
+        color: #555555;
     }
 
     .page-nums {
@@ -98,17 +98,18 @@
         }
 
         .page-num {
-            font-family: 'Inter', sans-serif;
+            font-family: "helvetica-regular";
             font-weight: 600;
-            font-size: 16px;
-            color: #333333;
+            font-size: 14px;
+            color: #555555;
 
             &.active {
-                color: #099939;
+                color: #000000;
+                font-family: "helvetica-bold";
             }
 
             &:hover {
-                color: #099939;
+                color: #000000;
             }
         }
     }
