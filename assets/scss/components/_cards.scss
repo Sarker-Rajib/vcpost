@@ -160,4 +160,25 @@
         line-height: 15.5px;
         color: #000000;
     }
+
+    .image {
+        position: relative;
+
+        span {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 3px 5px;
+            background: #000;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+}
+
+.n-card {
+    .para {
+        font-size: 14px;
+    }
 }
